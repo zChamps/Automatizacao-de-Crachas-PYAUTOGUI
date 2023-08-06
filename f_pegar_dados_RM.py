@@ -1,3 +1,5 @@
+import pyautogui
+
 def pegar_dados_rm(numero_crachas):
     import pyautogui
     import time
@@ -262,3 +264,8 @@ def pegar_dados_rm(numero_crachas):
     pyautogui.click(633,797, duration=0.3)
     pyautogui.click(870,298, duration=0.3) 
     pyautogui.hotkey("ctrl", "v")
+
+
+if __name__ == "__main__":
+    pyautogui.click(615,883)
+    pegar_dados_rm(10)

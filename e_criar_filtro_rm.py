@@ -10,3 +10,10 @@ def filtro_rm():
             pyautogui.doubleClick(885,268, duration=0.5)
             pyautogui.hotkey("ctrl", "v")
             pyautogui.click(1019,339)
+
+
+if __name__ == "__main__":
+    import pyautogui
+    pyautogui.click(611,879)
+    pyautogui.click(772,783)
+    filtro_rm()

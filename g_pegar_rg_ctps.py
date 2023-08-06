@@ -1,3 +1,5 @@
+
+
 def rg_ctps(a):
 
     import pyautogui
@@ -73,3 +75,7 @@ def rg_ctps(a):
             pyautogui.hotkey('ctrl', 'v')
             i += 1
             continue
+import pyautogui
+if __name__ == "__main__":
+    pyautogui.click(615,883)
+    rg_ctps(10)

@@ -16,7 +16,7 @@ def chamados_email():
         if not matriculas == "" or matriculas == " " or matriculas == "\n":
             lista_mat.append(matriculas)
 
-    caminho = r"CAMINHO_ARQUIVO"
+    caminho = r"caminho do arquivo txt com as matriculas"
 
 
     #apagar todo o conteudo do arquivo
@@ -45,8 +45,12 @@ def chamados_email():
     with open(caminho, "r") as arquivo:
         for i in arquivo:
             pc.copy(i)
-            pa.doubleClick(1434,482, duration=0.5)
+            pa.doubleClick(1434,481, duration=0.5)
             pa.hotkey("ctrl", "v")
             pa.keyDown("ctrl")
-            pa.click(260,565, duration=0.5)
+            pa.click(262,567, duration=0.5)
             pa.keyUp("ctrl")
+
+
+if __name__ == ("__main__"):
+    chamados_email()

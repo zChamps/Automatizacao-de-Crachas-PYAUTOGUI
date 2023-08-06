@@ -13,34 +13,11 @@ def chamados_externo(a):
 
         # 2 - abrir o formulário em outra aba
             if a == 25:
-
+                lista25 = [(163,134),(164,163),(164,194),(164,222),(165,249),(166,278),(167,307),(166,332),(165,366),(163,392),(165,419),(165,448),(165,479),(167,506),(162,538),(165,564),(164,592),(165,622),(165,652),(166,678),(165,707),(165,737),(164,763),(162,791),(164,822),]
 
                 pyautogui.keyDown('ctrl')
-                pyautogui.click(165,134, duration=0.1)
-                pyautogui.click(163,163, duration=0.1)
-                pyautogui.click(163,188, duration=0.1)
-                pyautogui.click(164,219, duration=0.1)
-                pyautogui.click(163,245, duration=0.1)
-                pyautogui.click(163,272, duration=0.1)
-                pyautogui.click(165,303, duration=0.1)
-                pyautogui.click(165,329, duration=0.1)
-                pyautogui.click(163,356, duration=0.1)
-                pyautogui.click(164,386, duration=0.1)
-                pyautogui.click(165,411, duration=0.1)
-                pyautogui.click(163,440, duration=0.1)
-                pyautogui.click(165,467, duration=0.1)
-                pyautogui.click(165,495, duration=0.1)
-                pyautogui.click(165,522, duration=0.1)
-                pyautogui.click(164,551, duration=0.1)
-                pyautogui.click(164,577, duration=0.1)
-                pyautogui.click(164,605, duration=0.1)
-                pyautogui.click(165,633, duration=0.1)
-                pyautogui.click(164,660, duration=0.1)
-                pyautogui.click(164,689, duration=0.1)
-                pyautogui.click(165,717, duration=0.1)
-                pyautogui.click(164,744, duration=0.1)
-                pyautogui.click(163,772, duration=0.1)
-                pyautogui.click(165,801, duration=0.1)                
+                for i in lista25:
+                    pyautogui.click(i, duration=0.05)
                 pyautogui.keyUp("ctrl")
                 break
             elif a == 20:
@@ -157,3 +134,59 @@ def chamados_externo(a):
                 pyautogui.click(164,564, duration=0.05)
                 pyautogui.keyUp("ctrl")
                 break
+
+            elif a == 22:
+                #ALINHAR COM A PARTE AZUL
+                lista22 = [(166,135), (163,163), (166,193), (164,220), (165,248), (165,278), (165,309), (165,337), (165,364), (166,393), (164,421), (165,452), (164,480), (165,507), (163,536), (164,562), (164,593), (163,622), (164,648), (164,679), (164,705), (164,736), ]
+                pyautogui.keyDown('ctrl')
+                
+                for i in lista22:
+                    pyautogui.click(i, duration=0.1)
+                pyautogui.keyUp("ctrl")
+                break
+
+            elif a == 19:
+                #colocar no 50% e rolar o scroll para cima 1 vez
+                lista19 = [(167,318),(166,346),(164,376),(165,401),(164,432),(163,459),(165,490),(165,519),(166,546), (165,576), (165,602), (165,637), (164,660), (164,692),(162,719), (164,745),(164,778), (163,804), (164,832)]
+                pyautogui.keyDown('ctrl')
+                
+                for i in lista19:
+                    pyautogui.click(i, duration=0.1)
+                pyautogui.keyUp("ctrl")
+                break
+
+            elif a == 16:
+                #colocar no 50% e rolar o scroll para cima 1 vez
+                lista16 = [(165,353), (165,383), (165,411), (165,438), (163,469), (164,495), (163,526), (163,554), (163,582), (165,612), (164,641), (164,667), (163,696), (164,724), (165,755), (165,782), ]
+                pyautogui.keyDown('ctrl')
+                
+                for i in lista16:
+                    pyautogui.click(i, duration=0.1)
+                pyautogui.keyUp("ctrl")
+                break
+
+            elif a == 13:
+                
+                lista13 = [(166,354), (164,380), (165,411), (166,439), (166,468), (163,496), (164,523), (165,553), (163,584), (164,612), (164,641), (165,668), (166,696), ]
+                pyautogui.keyDown('ctrl')
+                
+                for i in lista13:
+                    pyautogui.click(i, duration=0.1)
+                pyautogui.keyUp("ctrl")
+                break
+            elif a == 11:
+                
+                lista13 = [(164,359), (166,389), (166,419), (165,444), (166,477), (165,504), (166,531), (166,563), (165,587), (165,615), (160,647), ]
+                pyautogui.keyDown('ctrl')
+                
+                for i in lista13:
+                    pyautogui.click(i, duration=0.1)
+                pyautogui.keyUp("ctrl")
+                break
+
+if __name__ == "__main__":
+    import pyautogui
+    pyautogui.click(265,883)
+    pyautogui.click(370,795)
+    pyautogui.click(359,6)
+    # chamados_externo(11)
